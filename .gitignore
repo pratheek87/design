@@ -2,4 +2,4 @@ design/Debug
 design/.vs
 graphs/.vs
 graphs/.vs
-.gitignore
+/.gitignore
