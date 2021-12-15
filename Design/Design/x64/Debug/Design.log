@@ -1,0 +1,7 @@
+﻿  main.cpp
+D:\learning\Concepts\Design\Design\memory_mangement.h(57,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\learning\Concepts\Design\Design\main.cpp(18,60): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\learning\Concepts\Design\Design\main.cpp(23,20): warning C4244: 'initializing': conversion from '__int64' to 'double', possible loss of data
+D:\learning\Concepts\Design\Design\main.cpp(32,51): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\learning\Concepts\Design\Design\main.cpp(33,54): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Design.vcxproj -> D:\learning\Concepts\Design\x64\Debug\Concepts.exe

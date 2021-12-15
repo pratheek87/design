@@ -31,16 +31,12 @@ int main()
     const char* str1 = "My World is Disha Patani";
     CMyString* s = new CMyString(str, strlen(str));
     CMyString* s1 = new CMyString(str1, strlen(str1));
-    CMyString* temp = *s + *s1;
+    // CMyString* temp = *s + *s1;
 
     CMyString x("someString", 10);
 
     //cout << (*s + *s1)->getbuffer() << endl;
 
-    if ((*s + *s1) = x)
-    {
-        cout << "strings are same" << endl;
-    }
 
 
     cout << s->getbuffer() << endl;

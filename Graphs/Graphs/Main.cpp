@@ -12,16 +12,17 @@ int main()
     g.addEdge(1, 3);
     g.addEdge(1, 4);
     g.addEdge(2, 3);
+    //g.addEdge(4, 0);
     g.addEdge(2, 5);
     g.addEdge(3, 4);
     g.addEdge(3, 5);
 
     //g.displayGraph();
-    cout << "top sort" << endl;
-    g.TopoSort(1);
+    //g.TopoSort(1);
     //g.TraverseDFS(5);
  
-
+    if (g.detectCycle())
+        cout << "cycle detected" << endl;
 
     return 1;
 }

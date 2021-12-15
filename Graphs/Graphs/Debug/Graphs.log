@@ -1,4 +1,3 @@
-﻿  GraphTraversal.cpp
+﻿  Main.cpp
 D:\learning\Concepts\Graphs\Graphs\graph.h(36,22): warning C4018: '<': signed/unsigned mismatch
-D:\learning\Concepts\Graphs\Graphs\GraphTraversal.cpp(98,21): warning C4018: '<': signed/unsigned mismatch
   Graphs.vcxproj -> D:\learning\Concepts\Graphs\Debug\Graphs.exe

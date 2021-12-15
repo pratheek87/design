@@ -48,4 +48,5 @@ public:
 	void TraverseBFS(int startNode);
 
 	void TopoSort(int);
+	bool detectCycle();
 };

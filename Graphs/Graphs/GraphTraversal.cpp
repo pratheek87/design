@@ -105,7 +105,7 @@ void Graph::TopoSort(int s)
 			bComplete = true;
 			for (auto j : vertices[val])
 			{
-				if (visited[j] == 0)
+  				if (visited[j] == 0)
 				{
 					nodes.push(j);
 					visited[j] = 1;
@@ -125,4 +125,43 @@ void Graph::TopoSort(int s)
 		nodes.pop();
 	}
 
+}
+
+bool detectCycleRec(vector<list<int>>& vertices, vector<int>& visited, vector<int>& being_visited, int node)
+{
+
+	being_visited[node] = 1;
+	visited[node] = 1;
+
+	stack<int> nodes;
+
+	nodes.push(node);
+
+	while (!nodes.empty())
+	{
+		int top = nodes.top();
+		for (auto j : vertices[top])
+		{
+			if (being_visited[j] == 1)
+				return true;
+			else
+			{
+				if (detectCycleRec(vertices, visited, being_visited, j))
+					return true;
+			}
+		}
+		nodes.pop();
+	}
+	being_visited[node] = 0;
+
+
+}
+
+bool Graph::detectCycle()
+{ 
+	vector<int> visited(vertices.size(), 0);
+	stack<int> nodes;
+	nodes.push(0);
+	vector<int> being_visited(vertices.size(), 0);
+	return detectCycleRec(vertices, visited, being_visited, 0);
 }
